@@ -8,6 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "lint": "ng lint",
+    "lint:fix": "npm run lint -- --fix",
     "reset": "rm -rf node_modules && rm -f package-lock.json && pnpm i",
     "build:serve": "ng build && serve dist/ng-b357/browser -s",
     "serve": "npx serve dist/ng-b357/browser -s",

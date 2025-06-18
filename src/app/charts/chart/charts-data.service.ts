@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 
 import 'anychart';
+import View = anychart.data.View;
 
 @Injectable({ providedIn: 'root' })
 export class ChartsDataService {
@@ -19,7 +20,7 @@ export class ChartsDataService {
     data4: this.dataSet_.mapAs({ x: ['customName'], value: ['customValue4'] }),
   };
 
-  public getData(key = 'data1') {
+  getData(key = 'data1'): View {
     return this.mappings_[key];
   }
 }

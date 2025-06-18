@@ -120,6 +120,8 @@ module.exports = tseslint.config(
           ],
         },
       ],
+      '@angular-eslint/template/label-has-associated-control': 'warn',
+      '@angular-eslint/template/alt-text': 'warn',
       '@angular-eslint/template/button-has-type': 'warn',
       '@angular-eslint/template/cyclomatic-complexity': ['warn', { maxComplexity: 10 }],
       '@angular-eslint/template/eqeqeq': 'error',
